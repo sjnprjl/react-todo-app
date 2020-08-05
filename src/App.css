@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f1b727;
+}
+.main {
+    width: 400px;
+    margin: 10em auto;
+    height: 600px;
+    text-align: center;
+    border-radius: 10px;
+    border-radius: 50px;
+    border-radius: 29px;
+    border-radius: 45px;
+    border-radius: 45px;
+background: #f1b727;
+box-shadow:  20px 20px 65px #8c6a17, 
+             -20px -20px 65px #ffff37;
+}
+.main h1 {
+    font-size: 25px;
+    padding: 20px 10px;
+    color: #000;
+    text-transform: uppercase;
+
+}
+.main form input {
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    background: #eee;
+
+}
+.main form ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+    margin:10px auto;
+    padding-left: 10px;
+
+}
+.main form ul li {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    background: #373b44;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 1px 2px 12px 1px rgba(0,0,0,0.11);
+}
+.main form ul li:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5%;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    background: black;
+    transition: 0.2s all;
+}
+.main form ul li:hover {
+    color: rgba(255,255,255,0.5);
+}
+.main form ul li:hover:after {
+    width: 90%;
+}
